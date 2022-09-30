@@ -11,6 +11,10 @@ namespace GenericsIntro
             myList.Add("dwadwa");
             Console.WriteLine(myList[0]);
             myList.Add("daweca");
+            myList.Add("dfx");
+            myList.Add("xcv");
+            myList.Add("fgb");
+            myList.Add("feeq");
             Console.WriteLine(myList[0]);
             Console.WriteLine(myList[1]);
 
@@ -29,10 +33,13 @@ namespace GenericsIntro
             Console.WriteLine(myList2.Capacity);
             Console.WriteLine(myList2[2]);
 
-            myList2.Remove("ss");
+           
 
-            Console.WriteLine(myList2.Count);
-            Console.WriteLine(myList2[2]);
+
+            myList.Remove("daweca");
+            myList.Clear();
+            Console.WriteLine(myList[1]);
+
             
         }
     }

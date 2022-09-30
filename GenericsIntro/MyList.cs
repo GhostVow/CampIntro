@@ -38,6 +38,30 @@ namespace GenericsIntro
             _items[Count-1] = item;
         }
 
+        public void Remove(T item)
+        {
+            T[] tempArray = _items;
+
+            _items = new T[Count-1];
+            int index = 0;
+
+            foreach (var value in tempArray)
+            {
+                if (value.Equals(item))
+                {
+                    continue;
+                }
+                
+                _items[index] = value;
+                index++;
+            }
+
+        }
+
+        public void Clear()
+        {
+            _items = new T[0];
+        }
         
     }
 }
